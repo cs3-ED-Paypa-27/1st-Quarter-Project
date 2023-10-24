@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset = "UTF-8">
+			  <meta name = "author" content = "Earl">
+			  <meta name = "section" content = "Calcium">
+			  <meta name = "keywords" content = "1st Quarter Project">
+			  <meta name = "revised" content = "10/24/23">
+    </head>
+    <body style="background-color: antiquewhite;">
+        <nav>
+            <ul>  <!-- unordered list -->
+                <li class="navButton">About Us</li>
+                <li class="navButton">Contact Us</li>
+                <li class="navButton"><a href="featured.html">Featured Bikes</a></li>
+                <li class="navButton"><img src="navShop1.png" class="navShop" atl="This is the cart logo."></li>
+            </ul>
+            <!-- the code below is how to add image with a classname 'logo' -->
+            <img src="navLogo1.png" alt="This is the website logo." class="navLogo"> 
+
+            <!-- the code below is how to add title with a classname 'webTitle' -->
+            <h1 class="webTitle">Surigao Cycling Network</h1>
+        <img src="cover1.jpeg" alt="This is the website cover." class="cover">
+        
+        <h1>Feel the Wind, Enjoy the Ride</h1>
+        </nav>
+                       
+        <div class="container">
+        <h1 class="bikeTitle"> Latest Tour de France Winners </h1>
+                     <p class="bikeDesc"> The S5 is fully optimised for slicing through the wind, with deep truncated aerofoil tube shapes throughout, and an innovative V-shaped stem.</p> 
+        <img src="bikeCover1.jpeg" alt="This is the bike used in TDF." class="bikeCover">
+        <img src="bikeOwner1.png" alt="This is the latest TDF winner." class="bikeOwner">
+        <p class="bikeDesc"> Jonas Vingegaard Rasmussen born 10 December 1996, is a Danish professional cyclist who rides for UCI WorldTeam Team Jumbo–Visma.</p> 
+         </div>
+    </body>
+    <style>
+        body{
+        height: 100vh;
+        background: src="cover1.jpeg";
+        background-position: center;
+        background-repeat: no repeat;
+        background-size:100%;
+        }
+        /* top button navigation style properties 
+            ABOUT US, CONTACT US, FEATURED BIKES, ETC...
+
+            list-style-type:none to remove the  bullets or dots
+            float:right to make the elements floating to the right side
+        */
+        .navButton{
+            padding: 10px;
+            font-family: monospace;
+            color: white;
+            list-style-type: none;
+            float: right;
+            font-size: 35px;
+            border-right: 3px solid black ;
+        }
+
+        /* top navigation style properties 
+            position:fixed to make the navigation bar stick at the top most part of the webpage
+            gradient is from https://cssgradient.io/
+            */
+        nav{
+            width: 100%;
+            height: 100px;
+            border: 3px solid black;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(13,238,35,1) 44%, rgba(35,210,52,1) 58%, rgba(0,212,255,1) 100%);
+        }       
+        /* navLogo image as a logo float to the left side of the navigation bar */
+        .navLogo{
+            height: 80px;
+            float: left;
+        }
+
+        .navShop{
+            width: 40px;
+            float: left;
+        }
+
+        /* web page title font family change to one piece */
+        .webTitle{
+            padding: 10px;
+            font-family: monospace;
+            font-size: 35px;
+            color: white;
+            overflow: auto;
+        }
+        
+        /* div that has a classname container
+        which contains the text of our web page
+        black border is also added
+        */
+        .container{
+            width:100%;
+            text-align: center;
+            color: black;
+            margin-top: 800px;
+            overflow: auto;
+            border: 1px solid black;
+            
+        }
+        .cover{
+		   width: 100%;
+           overflow: auto;
+		   }
+		   
+        .bikeCover{
+            width:100%;
+            overflow: auto;          
+        }
+        
+        .bikeOwner{
+            width: 50%;
+            overflow: auto;   
+            float:left;
+            margin-left: 100px;       
+        }
+                
+        p{
+            font-size: 30px;
+            text-align: justify;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        
+         .coverShop{
+            font-size: 50px;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+            float: left;
+        }
+        
+        .bikeTitle{
+        font-size: 50px;
+            text-align: center;
+            margin-right: 20px;
+            margin-top: 15px;
+            margin-left: 20px;
+            float: left;
+            }
+       *{
+            margin:0;
+        }
+            margin-left: 30px;
+        }
+        .bikeMore{
+            font-size: 50px;
+
+        }
+
+        .bikeDesc{
+            font-family:serif;
+            font-size: 50px;
+            text-align: justify;
+            float: left
+        }
+        .button {
+                 text-align:center;
+		               background: white;
+			              outline: none;
+			              border: none;
+			              font-size: 1rem;
+			              font-weight: bold;
+		               	margin-top: 38px;
+		               	margin-left: 100px;
+			              padding: 8px 30px;
+			              border-radius: 6px;
+			              cursor: pointer;
+		               font-family: serif;
+		 	              background-position: center;
+			              color: black;
+			              center;
+		    	}
+	     	.button:hover {
+			                  color: white;
+			                  background: #9ac2e3;
+		    	}
+        *{
+            margin:0;
+        }
+		
+		a{
+			color: white;
+			text-decoration: none;
+		}
+    </style>
+</html>
